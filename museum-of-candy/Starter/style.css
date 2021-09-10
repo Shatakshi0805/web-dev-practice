@@ -1,0 +1,180 @@
+body {
+    background-color : #f7d6e0;
+    font-family: 'Nunito';
+}
+
+.nav-bar {
+    /* background-color: #f2b5d4; */
+    display: flex;
+    position: sticky;
+}
+
+.candy {
+    color: #f72585;
+    font-size: 20px;
+}
+
+h3 {
+    /* margin: 10px; */
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+}
+/* <-- Code for section 1 begins --> */
+.museum-of-candy {
+    display: flex;
+    /* margin: 30px 0px 0px 55px; */
+    justify-content: center;
+    flex-direction: row;
+    /* border: 5px solid black; */
+}
+
+.div-for-text1 {
+    /* margin: 10px 0px 0px 15px; */
+    padding: 0px;
+    /* border: 5px solid black; */
+    width: 50%;
+    height: 50%;
+    margin-top: 75px;
+    margin-right: -100px;
+}
+
+.div-for-img1 {
+    margin: -90px 0px 55px 0px;
+    /* border: 5px solid black; */
+    width: 600px;
+    height: 500px;
+}
+
+.img1 {
+    width: 110%;
+    height: 110%;
+    margin-left: 30px;
+    padding: 0;
+    /* margin-right: 0px; */
+}
+
+.text {
+    color: white;
+    font-size: 35px;
+    /* margin: 10px 10px 10px 10px; */
+    text-align: center;
+    line-height:15px;
+    margin-right: 25px;
+    /* margin-left: 150px; */
+    /* margin: 70px 0 0 15px;  */
+}
+
+.slash {
+    color: #dc0073;
+}
+/* <-- Code for section 1 ends --> */
+
+/* <-- Code for section 2 begins --> */
+
+.intro {
+    display: flex;
+    /* border: 5px solid black; */
+    margin-top: 50px;
+}
+
+.img2 {
+    width: 105%;
+    height: 105%;
+    margin-top: 55px;
+}
+
+.div-for-text2 {
+    /* border: 5px solid black; */
+    width: 50%;
+    text-align: center;
+    padding: 90px;
+    margin-left: 50px;
+}
+
+.div-for-img2 {
+    width: 600px;
+    height: 600px;
+    /* border: 5px solid black; */
+}
+
+h2 {
+    color: #f72585;
+    font-size: 35px;;
+}
+
+/* <-- Code for section 3 begins --> */
+.candy-machine {
+    display: flex;
+    margin-top: 80px;
+    /* border: 5px solid black; */
+}
+
+.img3 {
+    width: 110%;
+    height: 110%;
+    margin-left: 10px;
+    margin-top: 150px;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.div-for-text3 {
+    /* border: 5px solid white; */
+    text-align: center;
+    padding: 90px;
+    margin-top: 20px;
+    width: 50%;
+    height: 30%;
+    margin-left: 50px;
+} 
+
+.div-for-img3 {
+    /* border: 5px solid black; */
+    margin-top: -100px;
+    width: 600px;
+    height: 600px;
+}
+
+p {
+    padding: 10px;
+    line-height: 35px;
+}
+
+
+.sprinkles {
+    display: flex;
+    /* border: 5px solid black; */
+    margin-top: -60px;
+}
+
+.img4 {
+    width: 105%;
+    height: 100%;
+    margin-top: 225px;
+}
+
+.div-for-text4 {
+    /* border: 5px solid black; */
+    text-align: center;
+    padding: 90px;
+    margin-left: 50px;
+    width: 50%;
+    height: 30%;
+    margin-top: 150px;
+}
+
+.div-for-img4 {
+    width: 600px;
+    height: 600px;
+    /* border: 5px solid black; */
+    margin-top: -30px;
+}
+
+h2 {
+    color: #f72585;
+}
+
+.content {
+    color: #b392ac;
+}
