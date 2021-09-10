@@ -20,6 +20,7 @@ h3 {
     padding: 15px;
     font-size: 17px;
 }
+
 /* <-- Code for section 1 begins --> */
 .museum-of-candy {
     display: flex;
@@ -70,6 +71,7 @@ h3 {
 }
 /* <-- Code for section 1 ends --> */
 
+
 /* <-- Code for section 2 begins --> */
 
 .intro {
@@ -102,6 +104,8 @@ h2 {
     color: #f72585;
     font-size: 35px;;
 }
+/* <-- Code for section 2 ends --> */
+
 
 /* <-- Code for section 3 begins --> */
 .candy-machine {
@@ -139,9 +143,11 @@ h2 {
 p {
     padding: 10px;
     line-height: 35px;
-}
+} 
+/* <-- Code for section 3 ends --> */
 
 
+/* <-- Code for section 4 begins --> */
 .sprinkles {
     display: flex;
     /* border: 5px solid black; */
@@ -174,6 +180,7 @@ p {
 h2 {
     color: #f72585;
 }
+/* <-- Code for section 4 ends --> */
 
 .content {
     color: #b392ac;
