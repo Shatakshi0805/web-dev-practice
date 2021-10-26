@@ -1,0 +1,28 @@
+.parent-div {
+    /* color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    width: 550px;
+    height: 550px;
+    border: 5px solid black;
+    margin: 25px auto;
+}
+
+/* .player1 {
+    border: 5px solid black;
+    width: 100%;
+    height: 25%;
+}
+
+.player2 {
+    border: 5px solid black;
+    width: 100%;
+    height: 25%;
+}
+
+.resetbtn {
+    border: 5px solid black;
+    width: 100%;
+    height: 25%;
+} */
