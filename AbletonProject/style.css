@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-div {
+    width: 75%;
+    height: 50%;
+    /* border: 5px solid red; */
+    margin-left: 15px;
+    margin-top: 20px;
+    /* display: inline-block; */
+}
+
+.about {
+    width: 5%;
+    height: 20%;
+    /* border: 5px solid red; */
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.jobs {
+    width: 5%;
+    height: 20%;
+    /* border: 5px solid red; */
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.img1 {
+    margin: 10px auto;
+    width: 85%;
+    height: 45%;
+    /* border: 5px solid red; */
+    /* height: .5%; */
+}
+
+.img-1 {
+    width: 100%;
+
+}
+
+ h1 {
+    position: relative;
+    display: inline-block; /*vvv imp */
+    top: -700px;
+    bottom: -1050px;
+    left: 450px; 
+    /* right: 900px; */
+    /* right: -800px; */
+    background: linear-gradient(to bottom , #09b8db, white);;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 150px;
+}  
+/* #0c8097 */
+/* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: linear-gradient(to bottom right, blue, pink); */
