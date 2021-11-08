@@ -89,29 +89,34 @@ p {
     height: 750px;
     background-color: #fdffb6;
     /* border: 5px solid black; */
-    position: relative;
-    top: -900px;
+    position: relative;/*!!!as this div acts as a base part for images hence, this is to be kept relative*/
+    top: -30px;/* so that other images can act absolute wrt to or relation to base image/div in this case*/
     left: 620px;
     
 }
 
 .monitor {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    left: 200px;
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    left: 130px;/* 130px, 85px*/
+    top: 85px;
 }
 
 .books {
-    width: 50%;
-    height: 50%;
-    position: relative;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    top: 190px;
+    left: 950px;
 }
 
 .yellow-div {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
-    
+    flex-direction: row; */
+    position: relative;/*!!!!!!IMP, VVV IMP !!!*/
+    /* border: 5px solid blue;
+    width: 75%;
+    height: 100%; */
 }
