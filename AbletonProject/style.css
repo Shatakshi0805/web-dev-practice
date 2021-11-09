@@ -51,13 +51,72 @@ body {
     left: 450px; 
     /* right: 900px; */
     /* right: -800px; */
-    background: linear-gradient(to bottom , #09b8db, white);;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    /* color: linear-gradient(to bottom , #09b8db, white);
+  background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
     font-size: 150px;
 }  
+
+.text-img1 {
+    width: 75%;
+    height: 50%;
+    margin: 15px auto;
+    margin-top: -350px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 35px;
+}
+
+#bold {
+    line-height: 40px;
+}
 /* #0c8097 */
 /* background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: linear-gradient(to bottom right, blue, pink); */
+
+.yellow-part-div {
+    /* position:  */
+    width: 900px;
+    height: 750px;
+    background-color: #fdffb6;
+    /* border: 5px solid black; */
+    position: relative;/*!!!as this div acts as a base part for images hence, this is to be kept relative*/
+    top: -30px;/* so that other images can act absolute wrt to or relation to base image/div in this case*/
+    left: 620px;
+    
+}
+
+.monitor {
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    left: 130px;/* 130px, 85px*/
+    top: 85px;
+}
+
+.books {
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    top: 190px;
+    left: 950px;
+}
+
+.yellow-div {
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    position: relative;/*!!!!!!IMP, VVV IMP !!!*/
+    /* border: 5px solid blue;
+    width: 75%;
+    height: 100%; */
+}
