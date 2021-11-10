@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
 }
 
 .nav-div {
@@ -58,20 +60,21 @@ body {
 }  
 
 .text-img1 {
-    width: 75%;
-    height: 50%;
+    width: 980px;
+    height: 250px;
     margin: 15px auto;
-    margin-top: -350px;
+    margin-top: -390px;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
+    /* border: 5px solid red; */
 }
 
 a {
     text-decoration: none;
 }
 
-p {
-    line-height: 35px;
+b {
+    line-height: 45px;
 }
 
 #bold {
@@ -119,4 +122,42 @@ p {
     /* border: 5px solid blue;
     width: 75%;
     height: 100%; */
+}
+
+.text-img2 {
+    width: 1000px;
+    height: 250px;
+    margin: 55px auto;
+    /* border: 5px solid blue; */
+    font-size: 1.5rem;
+    margin-top: 110px;
+}
+
+.small-font {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.yt-vid {
+    /* width: 550px;
+    height: 550px; */
+    margin-top: 25px;
+    margin-left: 270px;
+    margin-right: auto;
+}
+
+.viddiv {
+    /*display:*/ /*vvvv IMPPP */
+    margin-top: 0;
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.text-yt {
+    width: 980px;
+    height: 550px;
+    border: 5px solid red;
+    margin: 30px auto;
+    margin-top: 50px;
+    font-size: 1.8rem;
 }
