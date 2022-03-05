@@ -1,3 +1,43 @@
-/* #weather-search {
+body {
+    font-family: "Poppins", sans-serif;
+}
 
-} */
+#weather-search {
+    /* position: absolute; */
+    /* left: 450px; */
+    /* top: -450px; */
+    bottom: 50px;
+    font-size: 30px;
+    /* margin-bottom: 0;
+    padding: 0; */
+    margin: auto;
+    width: 50%;
+    /* height: 10px; */
+    /* margin-bottom: 50px; */
+    border: 5px solid red;
+
+}
+
+input {
+    /* position: fixed; */
+    /* border-radius: 0 50% 0 50%; */
+    /* margin-top: -2000px; */
+    border-radius: 40px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+#heading {
+    border: 5px solid black;
+}
+
+#one {
+    border: 5px solid red;
+}

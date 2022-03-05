@@ -1,6 +1,6 @@
-const cityName = document.querySelector("#inpt");
+const cityName = document.querySelector("#input");
 
-const btn = document.querySelector("button");
+const btn = document.querySelector("#button");
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     console.log(cityName.value);

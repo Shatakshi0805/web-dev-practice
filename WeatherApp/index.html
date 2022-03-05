@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <title>weather</title>
+    <head>
+        <title>weather</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    </head>
+    
+
     <body>
         <div id = "weather-search">
-            <p>Search for Weather</p>
+            <div id = "heading"><p>Search for Weather</p></div>
             <form id = "search">
-                <input id = "inpt"  type = "text" placeholder = "Browse Weather">
+                <div id = "one"><input id = "input"  type = "text" placeholder = "Search Weather"></div>
                 <span>
-                    <button type = "submit">Search</button>
+                    <img id = "button" src="https://img.icons8.com/material-outlined/24/000000/search--v2.png"/>
                 </span>
             </form>
             
@@ -16,4 +23,6 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src = app.js></script>
     </body>
+
+    
 </html>
