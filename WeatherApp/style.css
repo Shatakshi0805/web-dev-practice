@@ -3,21 +3,19 @@ body {
 }
 
 #weather-search {
-    position: absolute;
-    left: 300px;
-    /* top: -450px; */
-    /* top: 120px; */
-    bottom: 120px;
-    font-size: 30px;
-    /* margin-bottom: 0;
-    padding: 0; */
-    margin: auto;
-    width: 50%;
-    /* height: 10px; */
-    /* margin-bottom: 50px; */
-    /* border: 5px solid red; */
+    font-weight: 700;
+    font-size: 1.5em;
+    /* margin-left: 10px; */
+    /* border: 2px solid red;; */
+}
 
 
+p {
+  margin-left: 10px;
+}
+
+#inputVal {
+  margin-left: 5px;
 }
 
 input {
@@ -25,7 +23,7 @@ input {
     /* border-radius: 0 50% 0 50%; */
     /* margin-top: -2000px; */
     border-radius: 40px;
-    width: 400px;
+    width: 300px;
     height: 40px;
     text-align: center;
     font-family: "Poppins";
@@ -78,3 +76,12 @@ button {
       .custom-map-control-button:hover {
         background: #ebebeb;
       }
+
+
+.weather-display {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
