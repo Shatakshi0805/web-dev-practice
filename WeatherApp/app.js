@@ -34,22 +34,24 @@ const getData = async () => {
     .then(r => {
       console.log(r);
       console.log(r.weather[0].description);
+      const iconcode = r.weather[0].icon;
+
       weatherDisplayBox.innerHTML = `<h3>
       ${cityName.value} has ${r.weather[0].description} weather today
-      <img src = "${r.weather[0].icon}" />
+      <img src = "${"http://openweathermap.org/img/w/" + iconcode + ".png"}" />
       </h3>`;
 
-      if (r.weather[0].description.includes("clear sky")) {
-        document.body.style.backgroundImage = "url('clearSky.jpg')";
-      } else if (r.weather[0].description.includes("haze")) {
-        document.body.style.backgroundImage = "url('haze.jpg')";
-      } else if (r.weather[0].description.includes("rain")) {
-        document.body.style.backgroundImage = "url('rain2.jpg')";
-      } else if (r.weather[0].description.includes("broken clouds") || r.weather[0].description.includes("broken clouds")) {
-        document.body.style.backgroundImage = "url('Scattered-clouds.gif')";
-      }
+    //   if (r.weather[0].description.includes("clear sky")) {
+    //     document.body.style.backgroundImage = "url('clearSky.jpg')";
+    //   } else if (r.weather[0].description.includes("haze")) {
+    //     document.body.style.backgroundImage = "url('haze.jpg')";
+    //   } else if (r.weather[0].description.includes("rain")) {
+    //     document.body.style.backgroundImage = "url('rain2.jpg')";
+    //   } else if (r.weather[0].description.includes("clouds")) {
+    //     document.body.style.backgroundImage = "url('Scattered-clouds.gif')";
+    //   }
     });
-}
+  }
 
 
 // console.log(lati, lon);
