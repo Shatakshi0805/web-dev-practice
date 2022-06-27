@@ -1,7 +1,4 @@
-const axios = require('axios');
 
-
-// const div = document.querySelector('#weather-display');
 
 let lati, lon;
 const weatherDisplayBox = document.querySelector('.weather-display');
@@ -15,17 +12,7 @@ const btn = document.querySelector("button");
 // console.log(btn);
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    // console.log(cityName.value);
-    // let ele = document.createElement('h3');
-    // let locationWeather = ele.append(cityName.value);
-    // document.body.appendChild(locationWeather)
-    
-    // let ele = document.createElement('h3');
-    // ele.innerText = locationWeatherData;
-    const cityName = document.querySelector("#inputVal");
-    let locationWeatherData = getData();
-    let weatherDisplayBox = document.querySelector('#weather-display');
-    weatherDisplayBox.append(locationWeatherData);
+    getData();
 });
 
 // console.log(cityName.value)/\;
@@ -33,21 +20,38 @@ btn.addEventListener('click', (e) => {
 //getting weather for the searched location
 
 const getData = async () => {
-    const resLatLon = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName.value}&appid=08f888211ef932f1ce1cd9e5d4123e5e`);
-    
-     lati = resLatLon.data[0].lat;//initialized already at top
-     lon = resLatLon.data[0].lon;//initialized already at top
-    console.log(lati, lon);
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${lon}&appid=08f888211ef932f1ce1cd9e5d4123e5e`)
-    .then(function (response) {
-      console.log(response)
+    const resLatLon = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName.value}&appid=08f888211ef932f1ce1cd9e5d4123e5e`)
+    .then(response => response.json())
+    .then(data => {
+      const latitude = data[0].lat;
+      const longitude = data[0].lon;
+      
+      console.log(latitude, longitude);
+      return fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=08f888211ef932f1ce1cd9e5d4123e5e`)
+
     })
-    .catch(function (e) {
-      console.log(e)
-    })
-    
-    console.log(actualRes.data.weather[0].description);
-}
+    .then(response => response.json())
+    .then(r => {
+      console.log(r);
+      console.log(r.weather[0].description);
+      const iconcode = r.weather[0].icon;
+
+      weatherDisplayBox.innerHTML = `<h3>
+      ${cityName.value} has ${r.weather[0].description} weather today
+      <img src = "${"http://openweathermap.org/img/w/" + iconcode + ".png"}" />
+      </h3>`;
+
+    //   if (r.weather[0].description.includes("clear sky")) {
+    //     document.body.style.backgroundImage = "url('clearSky.jpg')";
+    //   } else if (r.weather[0].description.includes("haze")) {
+    //     document.body.style.backgroundImage = "url('haze.jpg')";
+    //   } else if (r.weather[0].description.includes("rain")) {
+    //     document.body.style.backgroundImage = "url('rain2.jpg')";
+    //   } else if (r.weather[0].description.includes("clouds")) {
+    //     document.body.style.backgroundImage = "url('Scattered-clouds.gif')";
+    //   }
+    });
+  }
 
 
 // console.log(lati, lon);
