@@ -34,11 +34,11 @@ const getData = async () => {
     .then(r => {
       console.log(r);
       console.log(r.weather[0].description);
-      const iconcode = r.weather[0].icon;
+      const iconCode = r.weather[0].icon;
 
       weatherDisplayBox.innerHTML = `<h3>
       ${cityName.value} has ${r.weather[0].description} weather today
-      <img src = "${"http://openweathermap.org/img/w/" + iconcode + ".png"}" />
+      <img src = "${"http://openweathermap.org/img/w/" + iconCode + ".png"}" />
       </h3>`;
 
     //   if (r.weather[0].description.includes("clear sky")) {
